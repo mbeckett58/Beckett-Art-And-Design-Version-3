@@ -1,0 +1,282 @@
+/*
+Copyright Michael Beckett 2018 - www.beckettartanddesign.com
+Created on Nov 28, 2018
+*/
+/* Light Slate Gray */
+/* Rosy Brown */
+/* Steel Blue */
+/* Dark Slate Blue */
+/* Rosy Brown */
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic; }
+
+a {
+  text-decoration: none !important; }
+
+body {
+  background-color: #fff;
+  font-size: 1.2em; }
+
+#galleries {
+  padding: 1em; }
+
+.cust-header {
+  background-image: url("../img/resources/Teapots On Parade.jpg");
+  background-repeat: repeat-x;
+  background-position: left top;
+  background-attachment: fixed;
+  min-height: 75px;
+  background-size: 300px 75px; }
+  .cust-header h1 {
+    padding-top: 1em;
+    font-size: 1em;
+    text-shadow: black 0px 0px 15px;
+    color: white; }
+
+footer {
+  background-color: #323C65;
+  color: #A1A1C1; }
+
+.navbar {
+  border-top: #B38D81 0.5em solid; }
+
+.fab {
+  font-size: 1.2em;
+  margin-left: .2em; }
+
+.fas {
+  font-size: 1.2em;
+  color: #A1A1C1;
+  opacity: .8; }
+
+.nav-item span {
+  padding-left: .5em; }
+
+.social {
+  text-align: right;
+  background-color: #323C65; }
+  .social li a {
+    color: #A1A1C1;
+    opacity: .8; }
+  .social li a:hover {
+    color: white; }
+
+.arrow {
+  width: 5px;
+  font-style: normal; }
+
+.list-group-item {
+  padding: 0;
+  margin: 0; }
+  .list-group-item h3, .list-group-item h4, .list-group-item h5 {
+    padding-left: .5em; }
+
+.level_1 {
+  background-color: #4568AF;
+  border-top: 5px #323C65 solid; }
+  .level_1 div[data-parent$=galleries] {
+    background-color: #B38D81;
+    padding: 1em;
+    color: #372D33; }
+    .level_1 div[data-parent$=galleries] img {
+      border: .25em white solid;
+      margin: 1em; }
+  .level_1 a .row {
+    color: #A1A1C1 !important; }
+    .level_1 a .row :hover {
+      color: white !important; }
+
+.level_2 {
+  background-color: #B38D81 !important;
+  border-top: 3px #323C65 solid; }
+  .level_2 a .row {
+    color: rgba(255, 255, 255, 0.5) !important;
+    padding-left: 1em; }
+    .level_2 a .row :hover {
+      color: white !important; }
+    .level_2 a .row .fa-chevron-down:before {
+      color: rgba(255, 255, 255, 0.5) !important; }
+    .level_2 a .row .fa-chevron-up:before {
+      color: rgba(255, 255, 255, 0.5) !important; }
+
+.level_3 {
+  background-color: #4568AF !important;
+  border-top: 1px #323C65 solid; }
+  .level_3 a .row, .level_3 div .row {
+    color: #A1A1C1 !important;
+    opacity: .8  !important;
+    padding-left: 2em; }
+    .level_3 a .row :hover, .level_3 div .row :hover {
+      color: white !important; }
+
+.level_4 {
+  background-color: #323C65;
+  color: #372D33;
+  padding: 1em; }
+  .level_4 .btn-group {
+    background-color: transparent; }
+    .level_4 .btn-group a {
+      color: #A1A1C1; }
+    .level_4 .btn-group a:hover {
+      color: white; }
+
+.list-group-item span {
+  width: 80%; }
+.list-group-item .arrow {
+  width: 20% !important; }
+
+/*12em;*/
+/*14em;*/
+/*11em;*/
+/*.25em;*/
+.card {
+  display: inline-block;
+  vertical-align: top;
+  border: 1px black solid;
+  text-align: center;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  width: 12em;
+  height: 15em;
+  background-color: #A1A1C1;
+  color: #372D33; }
+
+.card-body {
+  width: 100%;
+  height: 100%;
+  padding: 0; }
+  .card-body .image {
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 12em; }
+    .card-body .image a img:hover {
+      border: 0.125em #323C65 solid; }
+  .card-body .caption {
+    font-size: .8em; }
+  .card-body .card-link {
+    color: rgba(255, 255, 255, 0.7); }
+  .card-body .card-link:hover {
+    color: white !important;
+    font-weight: bolder; }
+  .card-body .card-img {
+    border: 0.25em #fff solid;
+    margin: 0;
+    padding: 0; }
+  .card-body .portrait {
+    width: auto;
+    max-height: 10em;
+    margin-top: 1em; }
+  .card-body .landscape {
+    width: 10em;
+    height: auto;
+    margin-top: 2em; }
+
+.modal-title {
+  margin-left: auto; }
+
+.modal-body .imagepreview {
+  max-width: 21em; }
+.modal-body .thumbnails {
+  margin-top: 1em; }
+  .modal-body .thumbnails .thumbs {
+    max-width: 4em;
+    padding-left: .1em;
+    padding-bottom: .1em; }
+.modal-body .sales_link {
+  margin-top: 1em; }
+.modal-body .description {
+  font-size: small; }
+
+.sales_link table {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: small;
+  margin-bottom: 1em; }
+  .sales_link table tr {
+    text-align: right; }
+  .sales_link table tr:first-child {
+    font-weight: bold; }
+  .sales_link table tr:last-child {
+    border-top: solid 1px #000; }
+
+.thumbs_container {
+  margin-bottom: .25em; }
+
+.cust_container {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  width: 90%;
+  height: 100%;
+  padding: 1em;
+  background-color: #A1A1C1;
+  border: 0.1em #323C65 solid;
+  margin-left: auto;
+  margin-right: auto; }
+  .cust_container img {
+    margin-right: .6em;
+    border: .50em #fff solid; }
+  .cust_container a {
+    color: rgba(255, 255, 255, 0.6); }
+  .cust_container a:hover {
+    color: white; }
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .list-group-item span {
+    width: 85%; }
+  .list-group-item .arrow {
+    width: 15% !important; }
+
+  .cust-header {
+    background-image: url("../img/resources/Teapots On Parade.jpg");
+    background-repeat: repeat-x;
+    background-position: left top;
+    min-height: 75px;
+    background-attachment: fixed;
+    background-size: 300px 75px; }
+    .cust-header h1 {
+      padding-top: .5em;
+      font-size: 1.5em; } }
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  .list-group-item span {
+    width: 90%; }
+  .list-group-item .arrow {
+    width: 10% !important; }
+
+  .cust-header {
+    min-height: 150px;
+    background-size: 600px 150px; }
+    .cust-header h1 {
+      padding-top: 1em;
+      font-size: 2em; } }
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .cust-header {
+    min-height: 225px;
+    background-size: 900px 225px; }
+    .cust-header h1 {
+      padding-top: 1.5em;
+      font-size: 2.5em; } }
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .list-group-item span {
+    width: 95%; }
+  .list-group-item .arrow {
+    width: 5% !important; }
+
+  .cust-header {
+    min-height: 300px;
+    background-size: 1200px 300px; }
+    .cust-header h1 {
+      padding-top: 2em;
+      font-size: 3em; } }

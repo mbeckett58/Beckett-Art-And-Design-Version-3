@@ -1,0 +1,203 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 7, 2020, 11:58:53 AM
+    Author     : mbeck
+*/
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  font-style: italic;
+}
+#container {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #dddddd;
+  margin: 1em;
+}
+header,
+nav,
+footer {
+  width: 100%;
+}
+
+header {
+  background-image: url("https://i.ibb.co/zPBwLgk/bg.png");
+  background-color: lightgray;
+  border-bottom: 1em solid #fff;
+}
+
+nav {
+  background-color: lightgray;
+  border-bottom: 0.5em solid #fff;
+}
+
+/* [ON BIG SCREENS] */
+/* Wrapper */
+#hamnav {
+  width: 100%;
+  background: lightgray;
+  /* Optional */
+  position: sticky;
+  top: 0;
+}
+
+/* Hide Hamburger */
+#hamnav label,
+#hamburger {
+  display: none;
+}
+
+/* Horizontal Menu Items */
+#hamitems {
+  display: flex;
+}
+#hamitems a {
+  width: 20%; /* 100% / 5 tabs = 20% */
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+#hamitems a:hover {
+  background: #401408;
+}
+
+/* [ON SMALL SCREENS] */
+@media screen and (max-width: 768px) {
+  /* Show Hamburger Icon */
+  #hamnav label {
+    display: inline-block;
+    color: black;
+    background: lightgray;
+    font-style: normal;
+    font-size: 2em;
+    padding: 10px;
+  }
+
+  /* Break down menu items into vertical */
+  #hamitems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #333;
+  }
+
+  /* Toggle Show/Hide Menu */
+  #hamitems {
+    display: none;
+  }
+  #hamnav input:checked ~ #hamitems {
+    display: block;
+  }
+}
+
+#content {
+  display: flex;
+  flex-flow: row nowrap;
+  background-image: url("https://i.ibb.co/zPBwLgk/bg.png");
+  background-color: lightgray;
+}
+
+#center {
+  display: flex;
+  flex-flow: row wrap;
+  flex-grow: 10;
+  /*    width: 70%;*/
+}
+
+#left {
+  display: flex;
+  flex-direction: row;
+  order: -1;
+  flex-grow: 1;
+
+  background-color: #dddddd;
+}
+#right {
+  display: flex;
+  flex-direction: row;
+  background-color: #dddddd;
+  flex-grow: 1;
+}
+#outer {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0.5em;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 2em;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5em;
+  padding: 1em;
+  padding-top: 0.75em;
+  width: 16em;
+  height: 16em;
+  background-color: #dddddd;
+}
+
+.card-body .include {
+  margin: 5px;
+}
+
+.card-body .new {
+  margin: 5px;
+  background-color: red;
+  color: white;
+}
+.card-body .featured {
+  margin: 5px;
+  background-color: green;
+  color: white;
+}
+.card-body .sale {
+  margin: 5px;
+  background-color: blue;
+  color: white;
+}
+.thumb {
+  width: auto;
+  height: auto;
+}
+
+.thumb_image {
+  border: white 10px solid;
+  width: 12em;
+  height: 12em;
+}
+
+.image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+
+.image a {
+  width: auto;
+  height: auto;
+}
+
+.caption {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-decoration: none;
+}
+
+.caption a {
+  text-decoration: none;
+}

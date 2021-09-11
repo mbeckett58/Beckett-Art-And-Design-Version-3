@@ -1,0 +1,141 @@
+
+    <!--Paypal template-->
+    
+    <div id="paypal_template">
+
+        <table>
+            <tr>
+                <td colspan='2'>
+                    PAYPAL - Price in {{currency}} Dollars
+                </td>
+            </tr>
+            <tr>
+                <td>Price</td><td>{{price}}</td>            
+            </tr>
+            <tr>
+                <td>Shipping</td><td>{{shipping}}</td>                      
+            </tr>
+            <tr>
+                <td>Total</td><td>{{total}}</td>             
+            </tr>
+        </table> 
+    
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="{{paypal_button}}">
+            <input type="image" 
+                   src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" 
+                   border="0" name="submit" 
+                   alt="PayPal - The safer, easier way to pay online!">
+            <img alt="" border="0" 
+                 src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" 
+                 width="1" height="1">
+        </form>
+    </div>
+    <!--###-->
+    <!--preview template-->
+
+    <div  id="preview_template">
+        <div class="container-fluid">
+
+            <img src="" class="imagepreview img-fluid">
+
+            <div class="thumbnails"></div>
+            <div class="description"></div>
+            <br/>
+            <div class="medium"></div>
+            <div class="sales_link"></div>
+
+        </div>
+    </div>
+    <!--###-->    
+    <!--item template-->
+
+    <div id="item_template">
+        <div class="card">
+            <div class="card-body">
+                <div class="image">
+                    <a  href="#" class="card-link" 
+                       data-toggle="modal" data-target="#imagemodal">
+                        <div class="thumb">
+                        {{image}}
+                        </div>
+                    </a>
+                </div>
+                <div class="caption">
+                    <span class="card-title">{{title}}</span>
+                    <br>{{sales_status}}
+                </div>
+
+            </div> 
+        </div>
+    </div>
+    <!--###-->    
+    <div id="item_template2">
+
+        <div class="card-body">
+            <span class="include {{include_class}}">{{include_text}}</span>
+            <a href="#" class="card-link" 
+               data-toggle="modal" data-target="#imagemodal">
+                <div class="thumb">
+                {{image}}
+                </div>
+            </a>
+
+            <div class="caption">
+                <span class="card-title">{{title}}</span>
+                <span>{{sales_status}}</span>
+            </div>
+
+        </div> 
+
+    </div>
+    <!--###-->      <div id="subcategory_template">
+
+        <li id="sub_{{cat_id}}_{{sub_id}}_wrapper" class="list-group-item level_3">
+
+            <a data-toggle="collapse" 
+               href="#sub_{{cat_id}}_{{sub_id}}" class="ctl collapsed">
+                <h5 class="row">
+                    <span class="">{{subcategory}}</span>
+                    <span class="arrow fas fa-chevron-down"></span>
+                </h5>
+            </a>
+
+            <ul id="sub_{{cat_id}}_{{sub_id}}" 
+                class="list-group list-group-flush collapse" 
+                data-parent="#cat_{{cat_id}}_wrapper">   
+                <li class="list-group-item level_4">
+
+                    <div  id="sub_{{cat_id}}_{{sub_id}}_item_wrapper">
+                    </div>
+
+                    <div class="btn-group img-ctl float-right">
+                        <a href="#" class="btn btn-link img-more">More</a>
+                        <a href="#" class="btn btn-link img-close">Close</a>
+                    </div>
+                </li>
+            </ul>
+        </li>
+        
+    </div>
+    <!--###-->
+    <div id="category_template">
+        
+        <li id="cat_{{cat_id}}_wrapper" class="list-group-item level_2" 
+            data-parent="#cat_wrapper">
+
+            <a data-toggle="collapse" href="#cat_{{cat_id}}" class="ctl collapsed">
+                <h4 class="row">
+                    <span class="">{{category}}</span>
+                    <span class="arrow fas fa-chevron-down"></span>
+                </h4>
+            </a>
+
+            <ul id="cat_{{cat_id}}" class="list-group list-group-flush collapse" 
+                data-parent="#cat_wrapper">
+            </ul>
+
+        </li>
+        
+    </div>     
